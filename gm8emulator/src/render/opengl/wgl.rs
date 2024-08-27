@@ -256,7 +256,7 @@ impl PlatformImpl {
 
     pub unsafe fn wait_vsync(&self) {
         //(&*self.dxgi_output).WaitForVBlank();
-        panic!("let's GOOOOOOOOOOOOOOOOOOOO");
+        panic!("Please, turn off VSYNC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
     // pub unsafe fn make_current(&self) -> bool {

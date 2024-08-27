@@ -170,17 +170,20 @@ impl Game {
 
     pub fn display_mouse_get_x(&self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 0
-        unimplemented!("Called unimplemented kernel function display_mouse_get_x")
+        // unimplemented!("Called unimplemented kernel function display_mouse_get_x")
+        Ok(Default::default())
     }
 
     pub fn display_mouse_get_y(&self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 0
-        unimplemented!("Called unimplemented kernel function display_mouse_get_y")
+        // unimplemented!("Called unimplemented kernel function display_mouse_get_y")
+        Ok(Default::default())
     }
 
     pub fn display_mouse_set(&mut self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 2
-        unimplemented!("Called unimplemented kernel function display_mouse_set")
+        // unimplemented!("Called unimplemented kernel function display_mouse_set")
+        Ok(Default::default())
     }
 
     pub fn window_set_visible(&mut self, args: &[Value]) -> gml::Result<Value> {
