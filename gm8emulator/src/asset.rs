@@ -18,7 +18,6 @@ pub use script::Script;
 pub use sound::Sound;
 pub use sprite::Sprite;
 pub use timeline::Timeline;
-pub use trigger::Trigger;
 
 use serde::{Deserialize, Serialize};
 use std::fmt::{self, Display};

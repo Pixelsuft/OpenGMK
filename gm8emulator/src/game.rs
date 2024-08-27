@@ -546,7 +546,7 @@ impl Game {
         let window_icons = !settings.dont_show_buttons;
 
         let connection = ramen::connection::Connection::new()?;
-        let mut visual: u32 = 0;
+        let visual: u32 = 0;
         #[cfg(unix)]
         unsafe {
             let display = connection.xdisplay();
@@ -556,7 +556,7 @@ impl Game {
             visual = glx.visual;
         }
         
-        let mut builder = connection.builder()
+        let builder = connection.builder()
             .class_name("OpenGMK")
             .visible(false)
             .size((width as _, height as _))
