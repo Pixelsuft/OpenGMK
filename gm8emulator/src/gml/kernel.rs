@@ -451,37 +451,44 @@ impl Game {
 
     pub fn window_mouse_set(&mut self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 2
-        unimplemented!("Called unimplemented kernel function window_mouse_set")
+        // unimplemented!("Called unimplemented kernel function window_mouse_set")
+        Ok(Default::default())
     }
 
     pub fn window_view_mouse_get_x(&self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 1
-        unimplemented!("Called unimplemented kernel function window_view_mouse_get_x")
+        // unimplemented!("Called unimplemented kernel function window_view_mouse_get_x")
+        Ok(Default::default())
     }
 
     pub fn window_view_mouse_get_y(&self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 1
-        unimplemented!("Called unimplemented kernel function window_view_mouse_get_y")
+        // unimplemented!("Called unimplemented kernel function window_view_mouse_get_y")
+        Ok(Default::default())
     }
 
     pub fn window_view_mouse_set(&mut self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 3
-        unimplemented!("Called unimplemented kernel function window_view_mouse_set")
+        // unimplemented!("Called unimplemented kernel function window_view_mouse_set")
+        Ok(Default::default())
     }
 
     pub fn window_views_mouse_get_x(&self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 0
-        unimplemented!("Called unimplemented kernel function window_views_mouse_get_x")
+        // unimplemented!("Called unimplemented kernel function window_views_mouse_get_x")
+        Ok(Default::default())
     }
 
     pub fn window_views_mouse_get_y(&self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 0
-        unimplemented!("Called unimplemented kernel function window_views_mouse_get_y")
+        // unimplemented!("Called unimplemented kernel function window_views_mouse_get_y")
+        Ok(Default::default())
     }
 
     pub fn window_views_mouse_set(&mut self, _args: &[Value]) -> gml::Result<Value> {
         // Expected arg count: 2
-        unimplemented!("Called unimplemented kernel function window_views_mouse_set")
+        // unimplemented!("Called unimplemented kernel function window_views_mouse_set")
+        Ok(Default::default())
     }
 
     pub fn set_synchronization(&mut self, args: &[Value]) -> gml::Result<Value> {
