@@ -13,6 +13,7 @@
 *.obj
 *.dll
 *.lib
+*.exp
 *.def
 
 push.bat
