@@ -1,6 +1,5 @@
 #include <windows.h>
 #define ISNULL(ptr) ((ptr) == NULL)
-#define HEAP_ARGS HEAP_GENERATE_EXCEPTIONS
 
 /*
 Foreground Window Patch for IWBTGR (based on tas-rw-hook)
@@ -39,15 +38,7 @@ void hook_enable(Hook* bh) {
     WriteProcessMemory(app->phandle, (LPVOID)bh->orig_addr, bh->patch, sizeof(bh->patch), &bytes_written);
 }
 
-/*
-void hook_disable(Hook* bh) {
-    size_t bytes_written;
-    WriteProcessMemory(app->phandle, (LPVOID)bh->orig_addr, bh->orig_bytes, sizeof(bh->orig_bytes), &bytes_written);
-}
-*/
-
 double __stdcall get_foreground_window_hook(void) {
-    // MessageBoxW(NULL, L"Success!!!", L"", 0);
     return 1.0;
 }
 
@@ -66,7 +57,6 @@ DWORD WINAPI dll_main_thread(HMODULE hmod) {
     return 0;
 }
 
-// __declspec(dllexport)
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)
 {
     switch (ul_reason_for_call) {
