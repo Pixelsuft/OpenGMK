@@ -978,6 +978,10 @@ impl UIState<'_> {
                     KeyState::NeutralWillPress => {
                         self.game.input.button_press(i, true);
                         frame.inputs.push(replay::Input::KeyPress(i));
+						if (i == input::ramen2vk(Key::Z)) || (i == input::ramen2vk(Key::F9)) {
+							self.game.input.button_release(i, true);
+							frame.inputs.push(replay::Input::KeyRelease(i));							
+						}
                     },
                     KeyState::NeutralWillDouble | KeyState::NeutralDoubleEveryFrame => {
                         self.game.input.button_press(i, true);

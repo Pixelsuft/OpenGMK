@@ -319,7 +319,7 @@ impl TryFrom<ramen::input::Key> for Button {
             ramen::input::Key::U => Ok(Self::U),
             ramen::input::Key::V => Ok(Self::V),
             ramen::input::Key::W => Ok(Self::W),
-            ramen::input::Key::X => Ok(Self::F10), // Hack: map X for F10
+            ramen::input::Key::X => Ok(Self::F9), // Hack: map X for F9
             ramen::input::Key::Y => Ok(Self::Y),
             ramen::input::Key::Z => Ok(Self::Z),
             ramen::input::Key::Comma => Ok(Self::OemComma),
