@@ -7,7 +7,7 @@
 Start by cloning the repository. We use some git submodules at the moment (unfortunately), so make sure to clone with submodules.
 
 #+begin_src sh
-  git clone --recurse-submodules https://github.com/OpenGMK/OpenGMK.git
+  git clone --recurse-submodules https://github.com/Pixelsuft/OpenGMK.git
 #+end_src
 
 You can also recursively initialise the submodules after you've already cloned.
